@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "linetoBrown";
+  src: url("lineto-brown-regular.ttf");
+}
+body{
+  background-color: #13131a;
+  color: #faf4f4;
+  font-family: "linetoBrown";
+  margin: 100px;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+}
+
+main h1 {
+  display: inline-block;
+}
+
+.boxOne {
+  position: absolute;
+}
+
+.squareOne {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-color: #faf4f4;
+  border: 2px solid;
+}
+
+.squareOneTop {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: #13131a;
+  border-color: #faf4f4;
+  border: 2px solid;
+  translate: 0px 0px;
+  transition: translate 500ms ease-out;
+}
+
+.boxOne:hover .squareOneTop {
+  translate: -10px -10px;
+}
+
+.circle {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: #66BDE8;
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.boxOne:hover .circle {
+  opacity: 0.2;
+}
