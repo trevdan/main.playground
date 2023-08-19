@@ -1,0 +1,9 @@
+* {
+    font-family: "linetoBrown", sans-serif;
+    color: #FAF4F4;
+}
+
+body {
+  display: grid;
+  place-items: center;
+}
