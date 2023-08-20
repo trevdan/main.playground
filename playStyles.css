@@ -27,24 +27,29 @@ main h1 {
   position: absolute;
   width: 200px;
   height: 200px;
-  border-color: #faf4f4;
-  border: 2px solid;
+  border: 5px solid #faf4f4;
+  border-radius: 15px;
 }
 
 .squareOneTop {
   position: absolute;
   width: 200px;
   height: 200px;
-  background-color: #13131a;
-  border-color: #faf4f4;
-  border: 2px solid;
+  border: 5px solid #faf4f4;
+  border-radius: 15px;
+  background-image: linear-gradient(90deg, rgba(202,133,209,1) 0%, rgba(241,126,236,1) 29%, rgba(106,162,179,1) 100%);
   translate: 0px 0px;
-  transition: translate 500ms ease-out;
+  transition: translate 700ms ease-out;
 }
 
-.boxOne:hover .squareOneTop {
-  translate: -10px -10px;
+
+.squareOneTop:hover {
+  translate: -15px -15px;
 }
+
+/*
+
+circle drawn in css
 
 .circle {
   position: absolute;
@@ -59,3 +64,4 @@ main h1 {
 .boxOne:hover .circle {
   opacity: 0.2;
 }
+*/
