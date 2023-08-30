@@ -15,12 +15,10 @@ main {
   height: 500vh;
 }
 
-main h1 {
-  display: inline-block;
-}
-
 .boxOne {
   position: absolute;
+  left: 50%;
+  top: 30vh;
 }
 
 .squareOne {
@@ -55,14 +53,14 @@ main h1 {
   height: 200px;
   border: 5px solid #faf4f4;
   border-radius: 15px;
-  animation: rotate 1s linear infinite;
+  animation: rotate 0.1s linear infinite;
   animation-play-state: paused;
   animation-delay: calc(var(--scroll) * -2s);
 }
 
 @keyframes rotate {
   to {
-    transform: translate(500px,0) rotate(360deg);
+    transform: translate(100%,0) rotate(360deg);
   }
 }
 
